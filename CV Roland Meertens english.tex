@@ -1,0 +1,145 @@
+\documentclass[a4paper, oneside, final]{scrartcl}
+\usepackage{hyperref}
+
+\usepackage{soul}
+\usepackage{scrpage2}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[dutch]{babel}
+\usepackage{comment} 
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{bibentry}
+
+%\addtolength{\topmargin}{-3.075in}
+
+
+
+\usepackage{tabularx,colortbl}
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+\pagestyle{scrheadings}
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape}
+% add the symbols for email and phone contact data
+\cofoot{\so{Brouwersgracht 91 - 3901TK Veenendaal}\\
+\so{ {\Large\Letter} rolandmeertens@gmail.com \ \mbox{{\Large\Telefon} +31 (0)641642463}}}
+\setlength\parindent{0pt}
+
+%% Things I set
+\titlespacing\section{0pt}{4pt plus 2pt minus 2pt}{4pt plus 2pt minus 2pt}
+\definecolor{jobcolor}{RGB}{200,153,0}
+\definecolor{jobcolor}{RGB}{0,0,0}
+
+\definecolor{jobdescriptioncolor}{RGB}{50,50,50}
+\newcommand{\jobtitle}[2]{{\large\color{jobcolor}\textbf{{#1} \hfill {#2} \\ }}}
+\newcommand{\jobdescription}[1]{{\color{jobdescriptioncolor}{#1}\\}}
+
+  
+\begin{document}
+\begin{center} 
+\textsc{\Large{\so{Resume Roland Meertens}}}
+ \end{center}
+\section{Personal information}
+\newcommand{\gray}{\rowcolor[gray]{.90}}
+\begin{tabularx}{0.95\linewidth}{>{\raggedleft\scshape}p{2.2cm}X}
+Name& \textbf{Roland Meertens} \\
+Born & \textbf{5 November 1990, Nijmegen}\\
+Nationality & \textbf{Dutch} \\
+\end{tabularx}
+\section{Education}
+\jobtitle{Masters degree Artificial Intelligence}{September 2012 - March 2015} 
+\jobdescription{At the Radboud University Nijmegen with a specialisation in Cognitive Artificial Intelligence and Brain Computer Interfacing. Title of masters thesis: ``A Scalable Mixed Initiative Dialogue Manager''. }
+\jobtitle{Bachelor's degree Artificial Intelligence}{September 2009 - April 2013}
+\jobdescription{Radboud University Nijmegen. Title of bachelors thesis: ``Gesture based flight control''.}
+
+\section{Work experience}
+\jobtitle{ML/AI Engineer Autonomous Intelligent Driving}{Januari 2018 - Now} 
+\jobdescription{Creating machine learning (deep learning) models for the perception side of autonomous vehicles. Both created models, as well as developing programs in C++ to deploy on the cars. During this time I was scrum-master for the ML team. }
+\jobtitle{Research Engineer Localisation Infor}{September 2016 - December 2017} 
+\jobdescription{Changed parts of our translation software to Neural Machine Translation, and worked on automatic post-editing methods. 
+Thanks to my work on estimating translation quality the percentage of usable machine translated  sentences that was sent to the translators went from 55\% to 76\%. }
+\jobtitle{Researcher at Technical University Delft}{April 2015 - September 2016} 
+\jobdescription{Worked on monocular indoor localisation, and obstacle avoidance using stereo camera's at the Micro Aerial Vehicle Lab. Algorithms were implemented that could do this with small amounts of computing power to keep all computing onboard. Although I worked mostly on the software side, I also learned a lot about working with hardware.}
+\jobtitle{Internship at SpirOps in Paris }{January 2014 - July 2014} 
+\jobdescription{Created a dialogue management system for project Romeo. The goal of the project was building a system that can be used in healthcare to assist elderly people to keep their own lifestyle with little intervention from the outside world.}
+\jobtitle{Projects at Pinch of Intelligence }{August 2014 - current}
+\jobdescription{In 2014 I founded the company Pinch of Intelligence (see \url{www.pinchofintelligence.com}) and created several small projects. As I discovered I was more interested in creating than in selling and marketing I changed my site to a blog in 2016. Interesting project I made are: A demonstration to demonstrate how effictive human guidance is for an AI for the game Super Mario Bros was published at the BNAIC in 2014, a 3D visualiser for MEG data web browsers that can be used with existing virtual reality devices, and a music recommender system for people that are learning a foreign language (which can still be found on \url{www.duomusico.com}). }
+\jobtitle{Editor in chief of De Connectie }{ November 2012 - August 2015}
+\jobdescription{Magazine for AI students (and others that are interested) made by students from several universities in the Netherlands. The magazine was not released for a long time and together with the new editorial office we made 4 new editions with of 450 per edition. }
+\jobtitle{President of study association CognAC }{Sept. 2011 - Okt. 2012}
+\jobdescription{The study association had 160 members and a budget of 3000 euro for activities. The goals of having more activities including bigger activities, gathering more sponsorship and having more study meetings for students were all reached during that year.}
+\jobtitle{Manager robotics lab Radboud University }{August 2013 - March 2015}
+\jobdescription{Taught students how to use the robots in the lab. This includes programming, troubleshooting and writing tutorials. Robots available in the lab were: a Nao, Parrot Drone, Lego NXT and Sphero. }
+\jobtitle{Teaching assistant for several courses }{March 2011 - June 2014}
+\jobdescription{Three years for the bachelor course Human-computer interaction (90 students). One year for the bachelor course Research methods (150 students), and one year for the master course Research methods (8 students). }
+\section{Extracurricular activities}
+%\textbf{Cubscout leader at scouting Paul Kruger \hfill September 2010 - December 2011}\\ 
+%As cubscout leader it is my responsibility to prepare the saturday-meetings together with three other cubscout leaders. These activities are aimed at a group of about 20 children at the age between 7 and 11 and consisted mostly of games aimed at entertaining children and learning children basic scouting skills like first aid techniques and hiking skills.\\
+\jobtitle{Organisation of Forceparty }{February 2010 - February 2014}
+\jobdescription{Organised LAN-party's with a of visitor count between 90 and 150 people per edition.}
+\jobtitle{Committees at study association ``CognAC'' }{September 2009 - March 2015} 
+\jobdescription{Was a member of 8 committees, and was chairman of the study committee, sporting committee, educational paper committee, and the introduction comittee. }
+
+
+\section{Performance in relevant competitions}
+\jobtitle{Datathon sustainable fishing: first place}{} 
+\jobdescription{\url{http://www.pinchofintelligence.com/looking-back-at-my-first-datathon}}
+\jobtitle{IROS autonomous drone race: second place}{}
+\jobdescription{\url{http://mavlab.tudelft.nl/tu-delft-first-autonomous-drone-race/}}
+\jobtitle{Mario AI contest CognAC: first place}{}
+\jobdescription{Turned my entry into a BNAIC 2014 conference demonstration: \\
+\url{http://bnaic2014.org/?page_id=154}}
+
+\def \mytopseperator {-5pt}
+%\begin{itemize} [noitemsep,topsep=\mytopseperator]
+%  \item [Goal] Present an idea to increase the fish yield worldwide
+%  \item [Approach] Created a program that predicts worldwide what locations are suitable for Marine Protected Areas.
+%  \item [More] http://www.pinchofintelligence.com/looking-back-at-my-first-datathon
+%\end{itemize}
+
+%\textbf{International Health battle: first place}\\
+%Goal: try to get people with increased risk of coloncancer to a screening
+%Approach: create an app with which users can check if they have an increased risk. 
+%Read more: XXX \\
+%\textbf{Autonomous Mario competition (organised by study association): first place}\\
+%Goal: create the best bot using the Mario AI framework
+%Approach: used human input to improve reinforcement learning
+%Read more: published as a demonstration at BNAIC 2014 XXX \\
+%\textbf{IMAV competitions: XXX place}\\
+%\textbf{IROS drone race: second place}
+%\begin{itemize} [noitemsep,topsep=\mytopseperator]
+%  \item [Goal] Follow a race track with an autonomous drone. 
+%  \item [Approach] Adjusting shape-fitting algorithms to be able to run with a high frequency on consumer hardware. 
+%  \item [More] http://mavlab.tudelft.nl/tu-delft-first-autonomous-drone-race/
+%\end{itemize}
+
+
+\section{More information}
+\begin{description}[align=left,noitemsep,topsep=\mytopseperator]
+
+  \item [Personal blog] \url{http://www.pinchofintelligence.com}
+   \item [Collaborative blog] \url{http://www.andereintelligentie.nl/}
+  \item [Github] \url{https://github.com/rmeertens}
+\end{description}
+
+%\section{Publications}
+\newpage
+\bibliographystyle{plain}
+\renewcommand{\bibname}{Whatever floats your boat}
+\renewcommand\refname{Publications}
+
+\bibliography{Mypublications.bib}
+\bibentry{Meertens}
+\bibentry{Nous}
+\bibentry{Mcguire}
+\bibentry{Pandey}
+%\begin{tabularx}{1.00\linewidth}{>{\raggedleft\scshape}p{1cm}X}
+%\gray 2014& \bibentry{Meertens}\\
+%\gray 2014 & \bibentry{Pandey}\\
+%\gray 2015 & \bibentry{Mcguire}\\
+%\gray 2016 & \bibentry{Nous}\\
+%\end{tabularx}
+\end{document}
