@@ -1,0 +1,192 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+
+% Set applicant's personal data for header
+\name{Roland Meertens}
+\address{Haywood Lodge, N7 0JA, London}
+\contacts{roland@meertens.dev}
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+\vspace{-0.4cm}
+		\begin{cvsection}{}
+		\begin{cvsubsection}{About me}{}{}
+		I have a passion for Artificial Intelligence and am specialised in (automotive) robotics projects.  My knowledge ranges from interfacing sensors to and how to deploy efficient (machine learning) algorithms on limited hardware.  I have set up machine learning projects all the way from sensor selection, data collection and labelling to deploying models in production. 
+
+		I am passionate about technology,  and spend a lot of my spare time building and publishing interesting technical projects.  I sometimes join competitions, and frequently get invited to speak at meetups, universities, and conferences.
+	\end{cvsubsection}
+	\end{cvsection}
+	% Print the content
+	\begin{cvsection}{Employment}
+		\begin{cvsubsection}{Teach Lead}{Wayve}{2024 - current}
+			\begin{itemize}
+				\item Managed the Datasets team and grew it from zero to ten people
+				\item Tech lead for the expansion to Germany, Japan, and the expansion to the Nissan Ariya
+				\item \textbf{Skills:} Python,  PyTorch
+			\end{itemize}
+		\end{cvsubsection}
+		
+
+		\begin{cvsubsection}{Machine Learning Engineer}{Bumble}{2023 - 2024}
+			\begin{itemize}
+				\item Implemented face verification and recognition algorithms keeping our users safe
+				\item Prototyped multiple applications of AI-interaction between users and our platform. 
+				\item \textbf{Skills:} Python, PyTorch
+			\end{itemize}
+		\end{cvsubsection}
+		
+
+		\begin{cvsubsection}{Machine Learning Engineer and Product Manager}{Annotell}{2020 - 2022}
+			\begin{itemize}
+				\item Implemented an AI-assisted data selection tool that uses latent features to find interesting samples to label. 
+				\item AI-assisted 2D bbox labeling focussing on improving the quality of the auto-generated labels. 
+				\item Won the ZenseAct Edge AnnotationZ 2D/3D object detection challenge. 
+				\item \textbf{Skills:} Python,  TensorFlow,  ElasticSearch
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Machine Learning Engineer}{Autonomous Intelligent Driving}{2018 -- 2020}	
+			\begin{itemize}
+				\item Created neural networks for lidar-based 3D object detection.  These ran in our perception stack on limited hardware. 
+				\item Worked on the data selection and label specifications for our dataset. 
+				\item Implemented efficient algorithms to detect 'landmarks' for our localisation algorithms using lidar data.
+				\item Hardware accelerated several of the algorithms we were running on our vehicle to make our perception pipeline act in 'real time'. 
+ 				\item \textbf{Skills:} Python,  TensorFlow,  C++, CUDA,  OpenCV,  TensorRT,  Robotics
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Research Engineer}{Infor}{2016 -- 2017}		
+			\begin{itemize}
+				\item Changed our (pre)translation software to use neural networks, reducing human translation effort. 
+				\item Worked on automatic post-editing methods to improve our existing translation software. 
+ 				\item \textbf{Skills:} Python,  TensorFlow,  JavaScript,  Java,  C\#
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Researcher}{TU Delft -MAVLab}{2015 - 2016}
+			\begin{itemize}
+				\item Led the team that came second at the autonomous drone race competition at IROS 2016. 
+				\item Worked on efficient indoor localisation methods for autonomous drones. 
+				\item Created obstacle avoidance algorithms using ultra light weight stereo camera's
+ 				\item \textbf{Skills:} C++,  C,  Python,  OpenCV, Robotics
+			\end{itemize}
+		\end{cvsubsection}
+
+
+\begin{cvsubsection}{Jobs during my study}{}{2011 - 2015}
+			\begin{itemize}
+				\item Internship at SpirOps.  Developed the dialogue management system for a humanoid robot. 
+				\item Manager robotics lab at the Radboud University.  Helped set up a lab and taught students how to use the robots. 
+			\end{itemize}
+		\end{cvsubsection}
+
+
+
+	\end{cvsection}
+
+
+
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{}{Radboud University Nijmegen}{Sept.  2009 -- March 2015}
+			\begin{itemize}
+				\item M.S.E. in Artificial Intelligence. Title of thesis: ``A Scalable Mixed Initiative Dialogue Manager''. 
+				\item B.S.E. in Artificial Intelligence. Title of thesis: ``Gesture based flight control''.
+%				\item Graduate Coursework: Software Foundations; Computer Architecture; Algorithms; Artificial Intelligence; Comparison of Learning Algorithms; Computational Theory.
+%				\item Undergraduate Coursework: Operating Systems; Databases; Algorithms; Programming Languages; Comp. Architecture; Engineering Entrepreneurship; Calculus III.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+%\newpage
+
+	\begin{cvsection}{Passion Projects}
+		\begin{cvsubsection}{Maintaining my personal blog}{Meertens.dev}{2014-present}
+			\begin{itemize}
+				\item The blog had over 100.000 unique visitors over the last eight years and made the frontpage of news.ycombinator.com multiple times. 
+				\item Blog aimed at improving software by adding a bit of artificial intelligence.  I write about the machine learning projects I conduct in my spare time.  
+				\item Interesting projects I am proud of: an autonomous self-built robot, a virtual reality visualisation tool for lidar data, and a music recommender system for people that are learning a foreign language. 
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{Editor}{InfoQ.com}{}
+			\begin{itemize}
+				\item InfoQ.com is a website aimed at (senior) software developers.  It has 2.5 million unique visitors per month. 
+				\item Wrote multiple news articles, reviewed external articles with their authors, created podcasts, and organised two editions of the QCon AI conference in San Francisco. 
+				\item Frequently invited as a speaker to the QCon conferences. 
+			\end{itemize}
+		\end{cvsubsection}
+
+
+		% \begin{cvsubsection}{Editor in chief}{De Connectie }{}
+		% 	I started a magazine for AI students made by students from several universities in the Netherlands.  The magazine aimed to spread knowledge about artificial intelligence,  and to enthousiasm people about the topic. We made 4 editions with of 450 magazines per edition.
+		% \end{cvsubsection}
+
+
+		%\begin{cvsubsection}{President}{Study Association CognAC}{}
+	%		\begin{itemize}
+%				\item The study association had 160 members and a budget of 3000 euro for activities this year. The goals of having more activities, bigger activities, gathering more sponsorship, and having more study related events for students were all reached during that year.
+%			\end{itemize}
+%		\end{cvsubsection}
+	\end{cvsection}
+	
+%	\begin{cvsection}{Performance in competitions}
+%		\begin{cvsubsection}{}{}{}	
+%			\begin{itemize}
+%				\item \textbf{Datathon sustainable fishing: first place} We combined known approaches to prevent overfishing with global data to make an interactive tool to determine where to place fishing nurseries. 
+%				\item \textbf{IROS autonomous drone race: second place} Adjusting shape-fitting algorithms to be able to run with a high frequency on consumer hardware. 
+%				\item \textbf{Hack the road: second place} We created a green wave algorithm where self-driving cars adjust their speed to catch a green light, and indicate that they are doing this to other road users. 
+%				\item \textbf{INDI Robot Games} Built a fighting robot with the purpose to attack other fighting robots (also known as BattleBots and Robot Wars), which finished 18th out of 21 participants. 
+%				\item \textbf{Mario AI contest CognAC: first place} Created a reinforcement learning algorithm where Mario could teach itself to play the Super Mario Bros. game. Humans could take over control to allow for faster learning. 
+%			\end{itemize}
+%		\end{cvsubsection}
+%	\end{cvsection}
+	
+	\begin{cvsection}{Talks and conferences}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item \textbf{Intelligent Vehicles 2023}{ Data-centric AI for Robotics. Keynote at the workshop on Data Driven Intelligent Vehicle Applications }
+				\item \textbf{QCon Plus 2021}{ The Unreasonable Effectiveness of Zero Shot Learning.  A talk covering the latest advances in deep learning with respect to so-called 'foundational models'.  The talk both talked about the theory behind GPT-3 and CLIP,  and had a hands-on part to get listeners started with the technology. }
+				\item \textbf{2D3D AI 2021}{ Methods for Data Selection in Autonomous Vehicles.  A talk covering methods to build an image-search engine to find the best samples to label to improve your detection algorithm. The workshop consisted of a theoretical part, as well as a hands-on part in which participants were challenged to build their own data-search algorithms. }
+				\item \textbf{IROS 2020}{ Keynote: The road towards perception: Methods, challenges, and data required.  The talk is an overview of state of the art methods for autonomous driving, and which data one needs to solve these problems. }
+				% \item \textbf{TRADR SIKS summer school 2017}{I gave a half-day workshop on how to use deep learning for reinforcement learning applied to robotics. The attendees were a group of 25 students.}
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+%	\begin{cvsection}{Languages and Technologies}
+%		\begin{cvsubsection}{}{}{}	
+%			\begin{itemize}
+%				\item C++; C; Java; Objective-C; C\#.NET; SQL; JavaScript; XSLT; XML (XSD) Schema 
+%				\item Visual Studio; Microsoft SQL Server; Eclipse; XCode; Interface Builder
+%			\end{itemize}
+%		\end{cvsubsection}
+%	\end{cvsection}
+	
+\end{document}

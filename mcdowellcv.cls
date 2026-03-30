@@ -191,13 +191,14 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 \newtoggle{centertitledefined}
 \newtoggle{righttitledefined}
 
+
 \newenvironment{cvsubsection}[4][1]{
 	\notblank{#2}{\toggletrue{lefttitledefined}}{}
 	\notblank{#3}{\toggletrue{centertitledefined}}{}
 	\notblank{#4}{\toggletrue{righttitledefined}}{}
 	\ifboolexpr{togl {lefttitledefined} or togl {centertitledefined} or togl {righttitledefined}}{
-		\begin{tabu} to 1\textwidth { X[l,p] X[c,p] X[r,p] }
-			\textbf{#2} & \textbf{#3} & \textbf{#4} \\
+		\begin{tabu} to 1\textwidth { X[l,3] X[r,p] }
+			\textbf{#2} - \textbf{#3} & \textbf{#4} \\ 
 		\end{tabu}
 		% Add space according to the specidied number of lines
 		\ifnumcomp{#1}{=}{1}{\vspace*{\aftersinglelinesubsectionheaderspace}}{
@@ -217,4 +218,5 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 	\end{adjustwidth}
 	\vspace*{\aftersubsectionspace}
 }
+
 \makeatother
